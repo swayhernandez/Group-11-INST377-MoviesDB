@@ -167,7 +167,6 @@ router.get('/macros/:meal_id', async (req, res) => {
 
 router.put('/macros', async (req, res) => {
   try {
-    // N.B. - this is a good example of where to use code validation to confirm objects
     await db.Macros.update(
       {
         meal_name: req.body.meal_name,
@@ -180,6 +179,7 @@ router.put('/macros', async (req, res) => {
         protein: req.body.protein,
         fat: req.body.fat
       },
+
       {
         where: {
           meal_id: req.body.meal_id
