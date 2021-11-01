@@ -33,8 +33,13 @@ router.put('/put', (req, res) => {
   }
 });
 
-router.post('/', (req, res) => {
-
+router.post('/post', (req, res) => {
+  try {
+    res.send('post route');
+    console.log('post from the stuff')
+  } catch(error) {
+    console.log(error)
+  }
 });
 
 router.delete('/delete', (req, res) => {
