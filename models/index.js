@@ -6,7 +6,7 @@ import Film from './film.js';
 import Actor from './actors.js';
 import Genre from './genres.js';
 import Writer from './writers.js';
-import Studio from './studio.js';
+import Studio from './studios.js';
 
 export default {
   // DietaryRestrictions,
